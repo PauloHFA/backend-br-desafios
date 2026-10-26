@@ -44,3 +44,4 @@ public class EncryptedStringConverter implements AttributeConverter<String, Stri
         return staticCryptoService.decrypt(dbData);
     }
 }
+

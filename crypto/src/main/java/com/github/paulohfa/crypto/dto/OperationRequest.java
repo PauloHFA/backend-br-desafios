@@ -16,3 +16,4 @@ public record OperationRequest(
         Long value
 ) {
 }
+

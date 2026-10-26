@@ -63,3 +63,4 @@ Console H2 (para inspeção do banco em memória): `http://localhost:8080/h2-con
 SELECT id, user_document, credit_card_token, operation_value FROM tb_operations;
 ```
 As colunas `user_document` e `credit_card_token` conterão valores cifrados em Base64 (ex: `Q2hlY2tJdlJ...`), enquanto na API a resposta sempre será entregue no formato legível original.
+

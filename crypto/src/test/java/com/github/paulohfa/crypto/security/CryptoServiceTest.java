@@ -59,3 +59,4 @@ class CryptoServiceTest {
         assertThrows(CryptographyException.class, () -> cryptoService.decrypt("dado-invalido-base64"));
     }
 }
+

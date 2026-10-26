@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: auth-service
+
+app:
+  jwt:
+    # Segredo HMAC256 para assinatura dos tokens JWT
+    secret: DesafiosBackendBrSuperSecretJwtKey20261026
+    # Tempo de expiracao do token em minutos
+    expiration-minutes: 60
+
+server:
+  port: 8081

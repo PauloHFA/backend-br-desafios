@@ -10,3 +10,4 @@ public class CryptographyException extends RuntimeException {
         super(message, cause);
     }
 }
+

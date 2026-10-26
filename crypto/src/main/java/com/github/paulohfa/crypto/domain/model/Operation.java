@@ -70,3 +70,4 @@ public class Operation {
         this.value = value;
     }
 }
+
