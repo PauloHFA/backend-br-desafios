@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: loans-service
+
+server:
+  port: 8082
