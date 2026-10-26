@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: crypto-service
+
+  datasource:
+    url: jdbc:h2:mem:cryptodb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+app:
+  security:
+    # 256-bit AES secret key em Base64 (chave padrao para desenvolvimento/testes)
+    # Gerada a partir de 32 bytes aleatorios: "BackendBrCryptoSecretKey20261026"
+    crypto-secret: QmFja2VuZEJyQ3J5cHRvU2VjcmV0S2V5MjAyNjEwMjY=
+
+server:
+  port: 8080
